@@ -1,0 +1,26 @@
+<html>
+<head>
+    <title> Create note </title>
+</head>
+<body>
+    {% if with_password  %}
+        <div>
+            <form method="POST" action="/notes/create/with_password">
+                <label for="note"> Note </label><br>
+                <input style="width: 600px;" type="text" name="note" required="required"><br>
+                <label for"password"> Password </label><br>
+                <input type="text" name="password" required="required"><br>
+                <input type="submit" name="create-note">Create note<br>
+            </form>
+        </div>
+    {% else %}
+        <form method="POST" action="/notes/create/without_password">
+            <label for="note"> Note </label><br>
+            <input style="width: 600px;" type="text" name="note"><br>
+            <input type="submit" name="create-note">Create note<br>
+        </form>
+    {% endif %}
+
+    {{error_msg}}
+</body>
+</html>

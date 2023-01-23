@@ -1,0 +1,12 @@
+from dependecies import get_password_hash
+haslo = get_password_hash("Haslo.123")
+from models import User
+u = User(username="olekniemirka", hashed_password=haslo)
+
+
+
+notes
+for note in notes:
+    print(schemas.Note(note))
+for note in notes:
+    print(schemas.Note(id=note.id, public=note.public, owner=note.owner, markdown_encrypted=note.markdown_encrypted))

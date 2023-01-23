@@ -1,0 +1,20 @@
+<html>
+<head>
+    <title> Register </title>
+</head>
+<body>
+    <form method="POST" action="/register">
+        <label for="username"> Username </label><br>
+        <input type="text" name="username"><br>
+        
+        <label for="password_1"> Password </label><br>
+        <input type="text" name="password_1"><br>
+
+        <label for="password_2"> Password </label><br>
+        <input type="text" name="password_2"><br>
+
+        <input type="submit" name="register">Register<br>
+    </form>
+    <div> {{ register_alert }} </div>
+</body>
+</html>

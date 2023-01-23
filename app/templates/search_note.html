@@ -1,0 +1,13 @@
+<html>
+<head>
+    <title> Search note </title>
+</head>
+<body>
+    <form method="POST" action="/notes/search_by_id">
+        <label for="note_id"> Note id </label><br>
+        <input type="number" name="note_id"><br>        
+        <input type="submit" name="search">Search<br>
+    </form>
+    <div> {{ login_alert }} </div>
+</body>
+</html>

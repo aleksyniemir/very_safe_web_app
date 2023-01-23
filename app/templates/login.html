@@ -1,0 +1,21 @@
+<html>
+<head>
+    <title> Login </title>
+</head>
+<body>
+    <form method="POST" action="/login">
+        <label for="username"> Username </label><br>
+        <input type="text" name="username"><br>
+        
+        <label for="password"> Password </label><br>
+        <input type="text" name="password"><br>
+        <input type="submit" name="login">Login<br>
+    </form>
+    <div> {{ login_alert }} </div>
+    <form method="GET" action="/register">
+        <div>
+            <input type="submit" name="register">Register<br>
+        </div>
+    </form>
+</body>
+</html>

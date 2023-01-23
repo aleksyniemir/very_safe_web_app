@@ -1,0 +1,15 @@
+<html>
+<head>
+    <title> Your notes </title>
+</head>
+<body>   
+   {% for note in notes %}
+        {% set url = "/notes/get/" ~  note.id  ~ "/" ~ note.public %}
+        <form method="GET" action={{url}}>
+            <div> 
+                <input value="See note" type="submit" name=note.id> Note id: {{ note.id }}, public: {{ note.public }} </input>
+            </div>
+        </form>
+   {% endfor %}
+</body>
+</html>

@@ -1,0 +1,32 @@
+<html>
+<head>
+    <title> Main page </title>
+</head>
+<body>   
+    <form method="GET" action="/notes/create/false">
+        <div>
+            <button name="create-note-public"> Create public note </button>
+        </div>
+    </form>
+    <form method="GET" action="/notes/create/true">
+        <div>
+            <button name="create-note-with-password"> Create note with password </button>
+        </div>
+    </form>
+    <form method="GET" action="/notes/your_notes">
+        <div>
+            <button name="your-notes"> Your notes </button>
+        </div>
+    </form>
+    <form method="GET" action="/notes/search_by_id">
+        <div>
+            <button name="search-note-by-id"> Search note by id </button>
+        </div>
+    </form>
+    <form method="POST" action="/logout">
+        <div>
+            <button name="logout"> Logout </button>
+        </div>
+    </form>
+</body>
+</html>
