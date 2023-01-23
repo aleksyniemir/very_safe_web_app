@@ -20,11 +20,6 @@ def get_user(db: Session, id: int):
     user = db.scalar(stmt)
     return user
 
-def get_all_users(db: Session):
-    stmt = select(models.User)
-    users = db.scalars(stmt).all()
-    return users
-    
 def get_user_by_username(db: Session, username: str):
     stmt = select(models.User).where(models.User.username == username)
     user = db.scalar(stmt)
